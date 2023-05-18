@@ -26,21 +26,124 @@
                 </ul>
             </div>
         </nav> -->
+        <div id="particle_container" class="particle-container"></div>
+        <div id="particle_container1" class="particle-container"></div>
 
-        <section class="top-section">
+        <div class="top-section">
             <div class="top-section-content">
                 <header>
-                    <h1>Hi, my name is <span class="nav-logo"><strong>Henry Morris</strong></span></h1>
+                    <h1 class="title">Hi, my name is <span class="nav-logo"><strong>Henry
+                                Morris</strong></span></h1>
                 </header>
                 <div class="divider"></div>
                 <p>I make <span class="text-blur">software that is crystal
-                        clear</span> and planned thoughtfully  </p>
+                        clear</span> and planned thoughtfully </p>
 
                 <button class="top-section-button">
                     <h3 class="top-section-button-text">Learn More</h3>
                     <img src="images/iconmonstr-arrow-right-thin.svg" />
                 </button>
             </div>
-        </section>
+        </div>
+
+        <div class="about-section">
+            <div class="about-section-content">
+                <h1 class="title">
+                    About Me
+                </h1>
+                <div class="paragraph-and-tech">
+                    <p class="about-me-paragraph">
+                        I am a passionate programer, an active citizen, and a
+                        caring friend/family member. Currently I am also a
+                        student at Carleton University, and working at an Ottawa
+                        based startup Explorator. With my free time I mainly
+                        work on improving my skills as a programmer ethier
+                        creating projects, or learning new languages, however
+                        you may also see me on a soccer field.
+                    </p>
+                    <div class="tech-container">
+                        <div class="tech-level-container">
+                            <p class="tech-level-title">Professional Level</p>
+                            <div class="tech-things-container">
+                                <div class="tech">
+                                    <img class="tech-image" src="images/jsLogo.webp" />
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/typescriptLogo.png" />
+                                    <p>Typescript</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/rubyOnRailsLogo.png" />
+                                    <p>Ruby On Rails</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/firebase.webp" />
+                                    <p>Firebase</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/nodeJSLogo.png" />
+                                    <p>Node</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tech-level-container">
+                            <p class="tech-level-title">Casual Level</p>
+                            <div class="tech-things-container">
+                                <div class="tech">
+                                    <img class="tech-image" src="images/jsLogo.webp" />
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/typescriptLogo.png" />
+                                    <p>Typescript</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/rubyOnRailsLogo.png" />
+                                    <p>Ruby On Rails</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/firebase.webp" />
+                                    <p>Firebase</p>
+                                </div>
+                                <div class="tech">
+                                    <img class="tech-image" src="images/nodeJSLogo.png" />
+                                    <p>Node</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jparticles.all.js"></script>
+        <script>
+            new JParticles.Particle('#particle_container', {
+                color: '#182a0966', // #182a09 #dacee7
+                lineShape: 'cube',
+                range: 2000,
+                proximity: 100,
+                // Turn on parallax effect
+                parallax: false,
+            })
+
+            // separating waves
+            new JParticles.Wave('#particle_container1', {
+                num: 1,
+                // Set the line parameter to false
+                line: false,
+                // Set the fill parameter to true
+                fill: true,
+                // Set fill color
+                fillColor: '#f6fdd8', //  #27C9E5
+                offsetTop: 0.90,
+                crestHeight: 8,
+                crestCount: 3,
+                speed: 0.07,
+            })
+        </script>
     </body>
 </html>

@@ -20,6 +20,8 @@
 
     --desktop-width: 75rem;
     --desktop-nav-bar-height: 5rem;
+
+    --small-screen-size: 420px;
 }
 
 .title {
@@ -34,6 +36,7 @@
 
 html {
     z-index: 300;
+    width: 100%;
 }
 
 body {
@@ -43,6 +46,8 @@ body {
     z-index: 3000;
     padding: 0;
     margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
     /* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 }
 
@@ -482,4 +487,92 @@ body {
 
 .text-blur:hover {
 	filter: blur(0);
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 2.25rem;
+    }
+    .navbar .navbar-content {
+        width: 95%;
+    }
+    .top-section .top-section-content {
+        width: 95%;
+        margin-top: 3rem;
+    }
+    .about-section .about-section-content {
+        width: 95%;
+    }
+    .top-section .top-section-content h1 {
+        line-height: 3.25rem;
+    }
+    .top-section {
+        height: calc(90vh - 1px);
+    }
+    .about-section .about-me-paragraph {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .projects-container {
+        display: block;
+        width: 100%;
+    }
+    .project-container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .experience-container {
+        display: block;
+        width: 100%;
+    }
+    .experience-paragraph-description {
+        margin: 0;
+    }
+    .experience-section {
+        width: 90%;
+        padding: 0 5%;
+    }
+    .experience-image {
+        display: block;
+        margin: auto;
+    }
+    .experience-timeline {
+        text-align: center;
+    }
+
+    .experience-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
+
+    .contact-logos-container {
+        display: block;
+    }
+
+    .contact-logo {
+        display: inline;
+    }
+
+    .contact-github-logo {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .contact-email {
+        font-size: 1.25rem;
+        width: 100%;
+        overflow-wrap: break-word;
+
+    }
+
+    .contact-section {
+        width: 90%;
+        padding: 2rem 5%;
+    }
+
+    .contact-section-content {
+        width: 100%;
+        padding: 1rem 0;
+    }
 }

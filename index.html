@@ -8,24 +8,6 @@
         <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
     </head>
     <body>
-        <!-- <nav class="navbar">
-            <div class="navbar-content">
-                <ul class="nav-list">
-                    <li class="nav-item-logo nav-item">
-                        <a style="text-decoration: none;" href="#">HENRY <span class="nav-logo"><strong>MORRIS</strong></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
         <div id="particle_container" class="particle-container"></div>
         <div id="particle_container1" class="particle-container"></div>
 
@@ -36,53 +18,59 @@
                                 Morris</strong></span></h1>
                 </header>
                 <div class="divider"></div>
-                <p>I make <span class="text-blur">software that is crystal
+                <p>I make software that is <span class="text-blur">crystal
                         clear</span> and planned thoughtfully </p>
 
-                <button class="top-section-button">
+                <button id="learn-more-button" class="top-section-button">
                     <h3 class="top-section-button-text">Learn More</h3>
                     <img src="images/iconmonstr-arrow-right-thin.svg" />
                 </button>
             </div>
         </div>
 
-        <div class="about-section">
+        <div id="about-section" class="about-section">
             <div class="about-section-content">
-                <h1 class="title">
+                <h1 class="title section-title">
                     About Me
                 </h1>
-                <div class="paragraph-and-tech">
+                <div class="about-paragraph">
                     <p class="about-me-paragraph">
-                        I am a passionate programer, an active citizen, and a
-                        caring friend/family member. Currently I am also a
-                        student at Carleton University, and working at an Ottawa
-                        based startup Explorator. With my free time I mainly
-                        work on improving my skills as a programmer ethier
-                        creating projects, or learning new languages, however
-                        you may also see me on a soccer field.
+                        Hi, I am a passionate programmer. That’s because I love
+                        being able to make something that has a positive impact
+                        on potentially thousands of peoples lives with only a
+                        computer. I’m also very into video games, soccer and
+                        running (currently working on a sub 20 minute 5k). I am
+                        currently looking to work full time when I complete my
+                        degree part time at Carleton University for computer
+                        science.
                     </p>
-                    <div class="tech-container">
+                    <!-- <div class="tech-container">
                         <div class="tech-level-container">
                             <p class="tech-level-title">Professional Level</p>
                             <div class="tech-things-container">
                                 <div class="tech">
-                                    <img class="tech-image" src="images/jsLogo.webp" />
+                                    <img class="tech-image"
+                                        src="images/jsLogo.webp" />
                                     <p>Javascript</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/typescriptLogo.png" />
+                                    <img class="tech-image"
+                                        src="images/typescriptLogo.png" />
                                     <p>Typescript</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/rubyOnRailsLogo.png" />
+                                    <img class="tech-image"
+                                        src="images/rubyOnRailsLogo.png" />
                                     <p>Ruby On Rails</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/firebase.webp" />
+                                    <img class="tech-image"
+                                        src="images/firebase.webp" />
                                     <p>Firebase</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/nodeJSLogo.png" />
+                                    <img class="tech-image"
+                                        src="images/nodeJSLogo.png" />
                                     <p>Node</p>
                                 </div>
                             </div>
@@ -93,28 +81,176 @@
                             <p class="tech-level-title">Casual Level</p>
                             <div class="tech-things-container">
                                 <div class="tech">
-                                    <img class="tech-image" src="images/jsLogo.webp" />
+                                    <img class="tech-image"
+                                        src="images/jsLogo.webp" />
                                     <p>Javascript</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/typescriptLogo.png" />
+                                    <img class="tech-image"
+                                        src="images/typescriptLogo.png" />
                                     <p>Typescript</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/rubyOnRailsLogo.png" />
+                                    <img class="tech-image"
+                                        src="images/rubyOnRailsLogo.png" />
                                     <p>Ruby On Rails</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/firebase.webp" />
+                                    <img class="tech-image"
+                                        src="images/firebase.webp" />
                                     <p>Firebase</p>
                                 </div>
                                 <div class="tech">
-                                    <img class="tech-image" src="images/nodeJSLogo.png" />
+                                    <img class="tech-image"
+                                        src="images/nodeJSLogo.png" />
                                     <p>Node</p>
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-section personal-projects">
+            <h1 class="title section-title personal-projects-title ">
+                Projects
+            </h1>
+            <div class="projects-container">
+                <div class="project-container">
+                    <img class="project-image" src="images/rapid-report4.png" />
+                    <div class="project-text">
+                        <h4 class="project-title">Rapid Report</h4>
+                        <p class="project-paragraph">
+                            Rapid report is a software to record covid-19 rapid
+                            tests it was created when the Ontario government
+                            stopped testing for the public. Because testing data
+                            is extremely valuable to researchers I created the
+                            app. It gained a lot of popularity having recorded
+                            over 6000 tests and it being featured in cbc, ctv
+                            and a few smaller radio stations and news outlets.
+                        </p>
+                        <button class="project-check-out-button">Check it out</button>
                     </div>
+                </div>
+                <div class="project-container">
+                    <img class="project-image" src="images/dnd.png" />
+                    <div class="project-text">
+                        <h4 class="project-title">D&D Character Sheet</h4>
+                        <p class="project-paragraph">
+                            This is an application to manage a dungeons and
+                            dragons character. It can also manage a character's
+                            companion. The project also has a PDF parser that
+                            can parse a PDF from a similar application by D&D
+                            beyond. However D&D beyond charges money to access
+                            community created content which is why I created
+                            this app. <br /> <br />
+                        </p>
+                        <button class="project-check-out-button">Check it out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-section experience-section">
+            <h1 class="title section-title">
+                Experience
+            </h1>
+            <div class="experience-container">
+                <div class="experience-image-timeline-container">
+                    <img class="experience-image" src="images/kinaxis.png" />
+                    <p class="experience-timeline">May 2021 - August 2021,<br />
+                        May 2020 - August 2020,<br /> July 2019 - August 2019</p>
+                </div>
+                <p
+                    class="experience-paragraph-description experience-paragraph-description-right">
+                    Utilized React, Typescript and Material UI to develop react
+                    components for the company’s main product Rapid Response.
+                    Wrote comprehensive unit tests for my code to ensure
+                    industry quality. A part of the Design System creation.
+                    Responsible for creation of all buttons and inputs in the
+                    Design System.
+                </p>
+            </div>
+            <div class="experience-separator-line"></div>
+            <div class="experience-container">
+                <p
+                    class="experience-paragraph-description experience-paragraph-description-left">
+                    Utilized React, Typescript and Material UI to develop react
+                    components for the company’s main product Rapid Response.
+                    Wrote comprehensive unit tests for my code to ensure
+                    industry quality. A part of the Design System creation.
+                    Responsible for creation of all buttons and inputs in the
+                    Design System.
+                </p>
+                <div class="experience-image-timeline-container">
+                    <img class="experience-image" src="images/explorator.png" />
+                    <p class="experience-timeline">April 2019 to Current</p>
+                </div>
+            </div>
+            <h1 class="title section-title">
+                Technologies
+            </h1>
+            <div class="tech-things-container">
+                <div class="tech">
+                    <img class="tech-image"
+                        src="images/jsLogo.webp" />
+                    <p>Javascript</p>
+                </div>
+                <div class="tech">
+                    <img class="tech-image"
+                        src="images/typescriptLogo.png" />
+                    <p>Typescript</p>
+                </div>
+                <div class="tech">
+                    <img class="tech-image"
+                        src="images/rubyOnRailsLogo.png" />
+                    <p>Ruby On Rails</p>
+                </div>
+                <div class="tech">
+                    <img class="tech-image"
+                        src="images/firebase.webp" />
+                    <p>Firebase</p>
+                </div>
+                <div class="tech">
+                    <img class="tech-image"
+                        src="images/nodeJSLogo.png" />
+                    <p>Node</p>
+                </div>
+                <div class="tech">
+                    <img class="tech-image"
+                        src="images/React-icon.png" />
+                    <p>React</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-section contact-section">
+            <div class="contact-section-content">
+                <div class="contact-logos-container">
+                    <a class="contact-resume-container"
+                        href="https://drive.google.com/file/d/1kYucJ4WQB-tyBUJo5XmduEVdw59QrWi8/view?usp=sharing">
+                        <img src="images/resume-svgrepo-com.svg" />
+                        <p>resume</p>
+                    </a>
+                    <a class="contact-logo"
+                        href="https://github.com/404UsernameNotFound404">
+                        <img class="contact-github-logo"
+                            src="images/GitHub-logo.png" />
+                    </a>
+                    <a class="contact-logo"
+                        href="https://www.linkedin.com/in/henry-joseph-morris/">
+                        <img class="contact-linkedin-logo"
+                            src="images/Linkedin-logo.png" />
+                    </a>
+                </div>
+
+                <h1 class="contact-email">Henry.Joseph.Morris@Gmail.com</h1>
+                <div class="contact-email-button-and-tooltip">
+                    <button id="copy-email-button" class="contact-copy-button">COPY
+                        EMAIL</button>
+                    <span id="contact-email-copy-button-tooltip"
+                        class="contact-email-copy-button-tooltip">Copied :)</span>
                 </div>
             </div>
         </div>
@@ -144,6 +280,40 @@
                 crestCount: 3,
                 speed: 0.07,
             })
+        </script>
+
+        <script>
+            let hideCopyTooltipTimeout = undefined;
+            document.addEventListener("DOMContentLoaded", function() { // Ensure the DOM is fully loaded
+                const learnMoreButton = document.getElementById("learn-more-button");
+
+                learnMoreButton.addEventListener("click", function() {
+                    document.getElementById("about-section").scrollIntoView({
+                        behavior: 'smooth'
+                    });               // Action to be performed when button is clicked
+                });
+
+                const copyEmailButton = document.getElementById("copy-email-button");
+
+                copyEmailButton.addEventListener("click", function() {
+                    // copy email
+                    const dummy = document.createElement("input");
+                    document.body.appendChild(dummy);
+                    dummy.setAttribute('value', "henry.jospeh.morris@gmail.com");
+                    dummy.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(dummy);
+                    // show tool tip
+                    const tooltip = document.getElementById("contact-email-copy-button-tooltip");
+                    tooltip.style.opacity = 1;
+
+                    if (hideCopyTooltipTimeout) clearTimeout(hideCopyTooltipTimeout);
+
+                    hideCopyTooltipTimeout = setTimeout(() => {
+                        tooltip.style.opacity = 0;
+                    }, 4000)
+                });
+            });      
         </script>
     </body>
 </html>
